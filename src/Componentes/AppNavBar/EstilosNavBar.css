@@ -1,0 +1,70 @@
+                                                        /*Menu*/
+    /*Barra de navegacion*/
+.menuBar img{
+width: 30px;
+height: 30px;
+}
+
+.navbar-toggler{
+color: #1b1b1b;
+border-color: transparent;
+transition: all 2s;
+}
+
+.navbarColor{
+background-color: #111111;
+}
+
+.navbarColor p{
+    color: #dbdbdb;
+}
+.navbarColor p:hover{
+    color: #dbdbdb;
+}
+
+#logo{
+margin: 0px;
+padding: 0px;
+height: 50px;
+width: 100px;
+border-radius: 60px;
+object-fit: cover;
+object-position: center;
+}
+#logo:active{
+    scale: 0.8;
+    transition: all .8s;
+}
+
+
+#carrito{
+    margin: 0px;
+    padding: 0px;
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+#menuBar{
+    margin: 0px;
+    padding: 0px;
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.barraNav{
+justify-content: end;
+text-align: center;
+padding: 10px;
+}
+
+
+nav{
+background-color: #111111;
+}
+                                                /*Fin barra de navegacion*/

@@ -1,0 +1,10 @@
+.numeroCarrito{
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    background-color: #111111;
+    border-radius: 50%;
+    font-size: 15px;
+}

@@ -1,0 +1,31 @@
+
+#estas{
+    background-image: url(../../Imagenes/Fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    margin-bottom: 0;
+    border-radius: 0;
+    color: #1b1b1b;
+}
+
+#titulo{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+#subTitulo{
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.tamaño{
+    width: 400px;
+}

@@ -1,0 +1,31 @@
+.contador{
+    width: fit-content;
+    color: #e9e5e5;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.efectoBoton{
+    background-image: linear-gradient(to right, #1a1a1a 0%, #8012c0 51%, #7d30aa 100%);
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    color: #e9e5e5;
+    box-shadow: 0 0 10px #1a1a1a;
+    border-radius: 20px;
+    border: 0;
+}
+
+.efectoBoton:hover {
+    background-position: right center;
+    text-decoration: none;
+    transition: all 0.9s;
+}
+
+.efectoBoton:active {
+    scale: 0.8;
+    transition: all 0.8s;
+}
