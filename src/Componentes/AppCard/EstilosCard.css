@@ -3,11 +3,12 @@
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
+        background-color: #d1d1d1;
 }
 
 .carta:hover{
     border-radius: 10px;
-    box-shadow: 0 20px 20px #111111
+    box-shadow: 5px 10px 5px #111111
 }
 
 .carta img{

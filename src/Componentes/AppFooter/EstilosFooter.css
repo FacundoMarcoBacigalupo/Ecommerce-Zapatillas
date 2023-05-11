@@ -5,8 +5,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     
     grid-template-areas:
-        "fotoFooter redesFooter serviciosFooter"
-        "fotoFooter redesFooter serviciosFooter"
+        "fotoFooter redesFooter redesFooter"
+        "fotoFooter redesFooter redesFooter"
         "copyrightFooter copyrightFooter copyrightFooter";
     
     padding: 20px;
@@ -21,7 +21,10 @@
 
 .puertoFooter{
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px;
+    margin-right: 20px;
 }
 
 
@@ -168,7 +171,7 @@
         grid-template-areas:
             "fotoFooter"
             "redesFooter"
-            "serviciosFooter"
+            "redesFooter"
             "copyrightFooter";
         
         grid-gap: 40px;

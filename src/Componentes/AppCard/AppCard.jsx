@@ -1,22 +1,23 @@
 import React from 'react'
-import ItemCount from "../ItemCount/ItemCount"
 import "./EstilosCard.css"
 
 
-
-
-export const AppCard = ({titulo, imagen, price}) =>{
-
+export const AppCard = ({img, name, stock, precio}) => {
     return (
-        <article class="carta">
+        <article className="carta">
+
             <figure>
-                <img src={imagen} className="card-img-top" alt="Imagen"/>
+                <img src={img} className="card-img-top" alt={name} />
             </figure>
-            <div class="info-product">
-                <h2>{titulo}</h2>
-                <p class="price">${price}</p>
-                <ItemCount />
+
+            <div className="info-product">
+                <h2>{name}</h2>
+                <h4>Stock disponible: {stock}</h4>
+                <p className="price">${precio}</p>
+
+                <button className='efectoBoton'>Ver detalles</button>
             </div>
+
         </article>
     )
 }

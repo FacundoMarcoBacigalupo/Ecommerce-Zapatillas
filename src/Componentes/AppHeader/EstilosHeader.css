@@ -1,12 +1,13 @@
 
 #estas{
-    background-image: url(../../Imagenes/Fondo.jpg);
+    background-image: url(../../assets/images/Fondo.jpg);
     background-position: center;
     background-size: cover;
-    height: 600px;
+    height: 500px;
     width: 100%;
-    margin-bottom: 0;
-    border-radius: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 0px;
     color: #1b1b1b;
 }
 

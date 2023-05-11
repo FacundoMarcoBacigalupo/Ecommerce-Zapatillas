@@ -1,8 +1,7 @@
-import React, {Fragment} from 'react'
+import {Fragment, useState, useEffect} from 'react'
+import {obtenerProducts} from '../../products'
 import AppHeader from '../AppHeader/AppHeader'
-import AppCard from '../AppCard/AppCard'
-import NikeAirForce from "../../Imagenes/NikeAirForce.png"
-import Vans from "../../Imagenes/Vans.png"
+import ItemList from '../ItemList/ItemList'
 import "./EstilosContainer.css"
 
 
@@ -10,13 +9,30 @@ import "./EstilosContainer.css"
 
 export const ItemListContainer = () =>{
 
+    const [products, setProducts] = useState([])
+
+
+        useEffect(() => {
+            obtenerProducts()
+            .then (Response=>{
+                setProducts(Response)
+            })
+
+            .catch (error=>{
+                console.error(error)
+            })
+        }, [])
+
+
+
+
+
     return (
         <Fragment>
             <AppHeader titulo={"Nb Style"} />
 
-            <AppCard titulo= "Nike" imagen= {NikeAirForce} price={15000} />
+            <ItemList products={products} />
 
-            <AppCard titulo= "Vans" imagen={Vans} price={11000} />
         </Fragment>
     )
 }

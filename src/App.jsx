@@ -1,6 +1,7 @@
 import AppNavBar from './Componentes/AppNavBar/AppNavBar';
 import AppFooter from './Componentes/AppFooter/AppFooter';
 import ItemListContainer from './Componentes/ItemListContainer/ItemListContainer';
+import ItemDetallesContainer from './Componentes/ItemDetallesContainer/ItemDetallesContainer'
 
 
 
@@ -12,6 +13,8 @@ function App() {
         <AppNavBar />
 
         <ItemListContainer />
+
+        <ItemDetallesContainer />
 
         <AppFooter />
     </div>

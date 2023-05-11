@@ -1,33 +1,35 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 import "./EstilosItemCount.css"
 
 
 
 
-const ItemCount = () =>{
+const ItemCount = ({stock, initial=0, agreagarCar}) =>{
 
-    const [contador, setContador] = useState(0)
-
+    const [cantidad, setCantidad] = useState(initial)
         const sumar = () =>{
-            setContador(contador + 1);
+            if (cantidad < stock)
+            setCantidad(cantidad + 1);  
         }
+
         const restar = () =>{
-            setContador(contador - 1);
+            if (cantidad >= 1)
+            setCantidad(cantidad - 1);
         }
 
 
 
     return (
-        <div className='contador'>
-            <button disabled={contador <= 0}  onClick={restar} className='efectoBoton'>-</button>
+        <div className='cantidad'>
+            <button className='efectoBoton' onClick={restar}>-</button>
 
-            <span>{contador}</span>
+            <span>{cantidad}</span>
 
-            <button disabled={contador >= 7}  onClick={sumar} className='efectoBoton'>+</button>
+            <button className='efectoBoton' onClick={sumar}>+</button>
+
             <div>
-                <button className='efectoBoton'>Agregar al Carrito</button>
+                <button className='efectoBoton'  onClick={()=> agreagarCar(cantidad)}  disabled={!stock}>Agregar al Carrito</button>
             </div>
-
         </div>
     )
 }

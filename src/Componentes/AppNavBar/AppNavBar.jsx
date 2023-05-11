@@ -1,9 +1,8 @@
 import React from 'react'
 import "./EstilosNavBar.css"
-import Logo from "../../Imagenes/LogoNbStyle.jpg"
-import MenuBar from "../../Imagenes/MenuBar.png"
 import CartWidget from "../CartWidget/CartWidget"
-
+import LogoNbStyle from "../../assets/images/LogoNbStyle.jpg"
+import menuBar from "../../assets/images/MenuBar.png"
 
 
 export const AppNavBar = () =>{
@@ -13,10 +12,10 @@ export const AppNavBar = () =>{
 
             <div className="container-fluid">
 
-                <p className="navbar-brand" href="./index.html"><img src={Logo} alt="Logo" id='logo' /></p>
+                <p className="navbar-brand" href="./index.html"><img src={LogoNbStyle} alt="Logo" id='logo' /></p>
         
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon menuBar"><img src={MenuBar} alt="Menu Bar" id='menuBar' /></span>
+                <span className="navbar-toggler-icon menuBar"><img src={menuBar} alt="Menu Bar" id='menuBar' /></span>
                 </button>
 
                 <div className="collapse navbar-collapse barraNav" id="navbarNav">

@@ -7,10 +7,9 @@
 }
 
 .efectoBoton{
-    background-image: linear-gradient(to right, #1a1a1a 0%, #8012c0 51%, #7d30aa 100%);
+    background-image: linear-gradient(to right, #1a1a1a 0%, #3a3a3a 51%, #0c0c0c 100%);
     padding: 10px;
     margin: 10px;
-    text-align: center;
     text-transform: uppercase;
     background-size: 200% auto;
     color: #e9e5e5;

@@ -1,0 +1,17 @@
+.posicionItemCount{
+    text-align: center;
+    margin: 20px;
+}
+
+
+.posicionCardDetalles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.description{
+    font-size: 18px;
+    font-style: oblique;
+}
