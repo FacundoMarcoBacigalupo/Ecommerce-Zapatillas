@@ -24,6 +24,33 @@ const products = [
         description: "Zapatillas sencillas, facheras, sirven casi todas las ocasiones y lo más importante fácil de combinar.",
         stock: 8,
         precio: 9000
+    },
+    
+    {
+        id: "4",
+        img: "./assets/images/OjotasVansSlide.jpg",
+        name: "Ojotas Vans Slide",
+        description: "Ojotas Vans Slide, perfectas para la playa y para andar comod@ en casa.",
+        stock: 4,
+        precio: 6000
+    },
+
+    {
+        id: "5",
+        img: "./assets/images/NikeJordanAir.jpg",
+        name: "Nike Jordan Air",
+        description: "Nike Jordan Air, muy facheras, fáciles de combinar y perfectas para lucirlas en cualquier ámbito.",
+        stock: 9,
+        precio: 18000
+    },
+
+    {
+        id: "6",
+        img: "./assets/images/AdidasForum.jpg",
+        name: "Adidas Forum",
+        description: "Adidas Forum, elegantes y minimalistas, hechas para usar en casi cualquier ocasión.",
+        stock: 12,
+        precio: 17000
     }
 ]
 
@@ -32,11 +59,7 @@ const products = [
 
 export  const obtenerProducts = ()=>{
     return new Promise((resolve) => {
-
-        setTimeout (() =>{
-            resolve(products)
-        }, 800)
-    })
+        resolve(products)})
 }
 
 
@@ -47,6 +70,6 @@ export  const obtenerDetallesProducts = (ProductsId)=>{
 
         setTimeout (() =>{
             resolve( products.find(info=> info.id === ProductsId ) )
-        }, 1400)
-    })
+        }, 800)
+        })
 }

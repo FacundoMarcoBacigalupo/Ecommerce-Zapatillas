@@ -1,4 +1,3 @@
-import React from 'react'
 import ItemCount from "../ItemCount/ItemCount"
 import "./CardDetalles.css"
 
@@ -7,13 +6,15 @@ import "./CardDetalles.css"
 
 const CardDetalles = ({id, img, name, description, stock, precio}) =>{
 
+
+
     return (
         <div className='posicionCardDetalles'>
             <article className="carta" id={id}>
 
-                <figure>
+                <picture>
                     <img src={img} className="card-img-top" alt={name} />
-                </figure>
+                </picture>
 
                 <div className="info-product">
                     <h2>{name}</h2>

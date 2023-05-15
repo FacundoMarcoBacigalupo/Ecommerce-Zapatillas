@@ -1,8 +1,9 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import "./EstilosCard.css"
 
 
-export const AppCard = ({img, name, stock, precio}) => {
+export const AppCard = ({id, img, name, stock, precio}) => {
     return (
         <article className="carta">
 
@@ -15,7 +16,7 @@ export const AppCard = ({img, name, stock, precio}) => {
                 <h4>Stock disponible: {stock}</h4>
                 <p className="price">${precio}</p>
 
-                <button className='efectoBoton'>Ver detalles</button>
+                <Link className='efectoBoton' to={`/item/${id}`}>Ver detalles</Link>
             </div>
 
         </article>

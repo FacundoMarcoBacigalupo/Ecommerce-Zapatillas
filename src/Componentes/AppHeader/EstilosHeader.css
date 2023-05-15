@@ -1,9 +1,9 @@
-
 #estas{
+    box-sizing: border-box;
     background-image: url(../../assets/images/Fondo.jpg);
     background-position: center;
     background-size: cover;
-    height: 500px;
+    height: 400px;
     width: 100%;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -11,22 +11,41 @@
     color: #1b1b1b;
 }
 
-#titulo{
+#titulo{    
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
     font-weight: bold;
-}
-
-#subTitulo{
-    text-align: center;
-    margin-top: 100px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    font-weight: bold;
+    text-shadow: 0px 6px 5px #000;
+    color: #eeeeee;
 }
 
 
-.tamaño{
-    width: 400px;
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px){
+    #titulo{    
+        font-size: 40px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 480px){
+    #titulo{    
+        font-size: 31px;
+    }
 }

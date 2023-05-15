@@ -7,7 +7,7 @@ import facebook from '../../assets/images/facebook-chico.png'
 
 
 
-export const AppFooter = () =>{
+export const Footer = () =>{
 
     return (
     <footer className="containerFooter">
@@ -17,18 +17,18 @@ export const AppFooter = () =>{
         <div className="redesFooter">
             <p className="puertoFooter">Seguinos en nuestras Redes Sociales</p>
 
-            <a href="https://www.tiktok.com/@nbstyleok?lang=es" id="tiktok"><img src={tiktok} alt="TikTok" /></a>
+            <a href="https://www.tiktok.com/@nbstyleok?lang=es" id="tiktok" target="_blank"><img src={tiktok} alt="TikTok" /></a>
 
-            <a href="https://www.instagram.com/nbstyleok/" id="ig"><img src={instagram} alt="Instagram" /></a>
+            <a href="https://www.instagram.com/nbstyleok/" id="ig" target="_blank"><img src={instagram} alt="Instagram" /></a>
 
-            <a href="https://www.facebook.com/nbstyleok" id="fb"><img src={facebook} alt="Facebook" /></a>
+            <a href="https://www.facebook.com/nbstyleok" id="fb" target="_blank"><img src={facebook} alt="Facebook" /></a>
         </div>
 
-        <p className="copyrightFooter">Argentina, Buenos Aires ©2023 Nb Style. Todos los derechos reservados.</p>
+        <p className="copyrightFooter">Argentina, Buenos Aires ©2023 Nb Style. Todos los derechos reservados. Hecho por Facundo Marco Bacigalupo</p>
     </footer>
     )
 }
 
 
 
-export default AppFooter
+export default Footer

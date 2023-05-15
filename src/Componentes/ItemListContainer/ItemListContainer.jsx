@@ -1,6 +1,5 @@
 import {Fragment, useState, useEffect} from 'react'
 import {obtenerProducts} from '../../products'
-import AppHeader from '../AppHeader/AppHeader'
 import ItemList from '../ItemList/ItemList'
 import "./EstilosContainer.css"
 
@@ -29,10 +28,7 @@ export const ItemListContainer = () =>{
 
     return (
         <Fragment>
-            <AppHeader titulo={"Nb Style"} />
-
             <ItemList products={products} />
-
         </Fragment>
     )
 }

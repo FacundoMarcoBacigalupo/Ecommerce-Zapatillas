@@ -1,0 +1,20 @@
+#historiaNbstyle{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+
+#historiaNbstyle h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#historiaNbstyle p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+#historiaNbstyle p::first-letter{
+    font-size: 40px;
+}

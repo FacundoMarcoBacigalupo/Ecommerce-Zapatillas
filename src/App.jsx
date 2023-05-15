@@ -1,7 +1,4 @@
-import AppNavBar from './Componentes/AppNavBar/AppNavBar';
-import AppFooter from './Componentes/AppFooter/AppFooter';
-import ItemListContainer from './Componentes/ItemListContainer/ItemListContainer';
-import ItemDetallesContainer from './Componentes/ItemDetallesContainer/ItemDetallesContainer'
+import Rutas from './Rutas/Rutas';
 
 
 
@@ -10,13 +7,7 @@ function App() {
 
   return (
     <div className="App">
-        <AppNavBar />
-
-        <ItemListContainer />
-
-        <ItemDetallesContainer />
-
-        <AppFooter />
+      <Rutas />
     </div>
   );
 }
