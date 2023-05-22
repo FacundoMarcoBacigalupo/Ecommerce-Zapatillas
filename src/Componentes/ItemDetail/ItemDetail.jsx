@@ -1,3 +1,5 @@
+import {useState} from "react"
+import {Link} from "react-router-dom"
 import ItemCount from "./ItemCount/ItemCount"
 import "./ItemDetail.css"
 
@@ -6,6 +8,11 @@ import "./ItemDetail.css"
 
 const ItemDetail = ({id, img, name, description, stock, precio}) =>{
 
+    const [quantityAdded, setQuantityAdded] = useState(0)
+
+    const handleOnAdd = (quantity) =>{
+        setQuantityAdded(quantity)
+    }
 
 
     return (
@@ -16,7 +23,7 @@ const ItemDetail = ({id, img, name, description, stock, precio}) =>{
                     <img src={img} className="card-img-top" alt={name} />
                 </picture>
 
-                <div className="info-product">
+                <section className="info-product">
                     <h2>{name}</h2>
                     <p className='description'>{description}</p>
 
@@ -24,10 +31,16 @@ const ItemDetail = ({id, img, name, description, stock, precio}) =>{
                     <p className="price">${precio}</p>
 
 
-                    <div className='posicionItemCount'>
-                        <ItemCount initial={0}  stock={stock}  agreagarCar={(cantidad)=> console.log("La cantidad agreaga es: ",cantidad)} />
-                    </div>
-                </div>
+                    <footer className='posicionItemCount'>
+                        {
+                            quantityAdded > 0 ?(
+                                <Link to="/Cart" className="efectoBoton">Terminar compra</Link>
+                            ) :(
+                                <ItemCount initial={0}  stock={stock} onAdd={handleOnAdd}/>
+                            )
+                        }
+                    </footer>
+                </section>
 
             </article>
         </div>

@@ -4,7 +4,7 @@ import "./EstilosItemCount.css"
 
 
 
-const ItemCount = ({stock, initial=0, agreagarCar}) =>{
+const ItemCount = ({stock, initial=0, onAdd}) =>{
 
     const [cantidad, setCantidad] = useState(initial)
         const sumar = () =>{
@@ -28,7 +28,7 @@ const ItemCount = ({stock, initial=0, agreagarCar}) =>{
             <button className='efectoBoton' onClick={sumar}>+</button>
 
             <div>
-                <button className='efectoBoton'  onClick={()=> agreagarCar(cantidad)}  disabled={!stock}>Agregar al Carrito</button>
+                <button className='efectoBoton'  onClick={()=> onAdd(cantidad)}  disabled={!stock}>Agregar al Carrito</button>
             </div>
         </div>
     )

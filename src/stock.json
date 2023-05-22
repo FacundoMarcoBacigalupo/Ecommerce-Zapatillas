@@ -62,8 +62,8 @@
     {
         "id": "7",
         "img": "./assets/images/AdidasRemera.jpg",
-        "name": "Adidas remera",
-        "description": "Remera 100% hecha de algodon y combinable con todo.",
+        "name": "Adidas",
+        "description": "Remera 80% hecha de algodón y es una buena opción para usar de remera deportiva.",
         "stock": 24,
         "precio": 10000,
         "category": "ropa"
@@ -72,10 +72,50 @@
     {
         "id": "8",
         "img": "./assets/images/NikeRemera.jpg",
-        "name": "Nike remera",
-        "description": "Remera 100% hecha de algodon y combinable con todo.",
+        "name": "Nike",
+        "description": "Remera 100% hecha de algodón, combinable con todo.",
         "stock": 22,
         "precio": 10000,
+        "category": "ropa"
+    },
+
+    {
+        "id": "9",
+        "img": "./assets/images/JorndaRemera.jpg",
+        "name": "Jordan",
+        "description": "Remera 90% hecha de algodón, muy fácil de combinar con cualquier cosa.",
+        "stock": 15,
+        "precio": 12000,
+        "category": "ropa"
+    },
+
+    {
+        "id": "10",
+        "img": "./assets/images/BullsRemera.jpg",
+        "name": "Bulls",
+        "description": "Remera 100% hecha de algodón, genial para jugar basketball o solo para lucirla.",
+        "stock": 28,
+        "precio": 15000,
+        "category": "ropa"
+    },
+
+    {
+        "id": "11",
+        "img": "./assets/images/AfaRemera.jpg",
+        "name": "Afa 3 Estrellas",
+        "description": "Remera 90% hecha de algodón pero CAMPEONA DEL MUNDO, muy fácil de combinar con cualquier cosa y lucir como un CAMPEÓN.",
+        "stock": 30,
+        "precio": 18000,
+        "category": "ropa"
+    },
+
+    {
+        "id": "12",
+        "img": "./assets/images/ThunderBlockRemera.jpg",
+        "name": "Thunder Block",
+        "description": "Remera 100% hecha de algodón con un estilo raro pero bueno y muy combinable.",
+        "stock": 8,
+        "precio": 25000,
         "category": "ropa"
     }
 ]
