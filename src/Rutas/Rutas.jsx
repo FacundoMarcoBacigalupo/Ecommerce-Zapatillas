@@ -9,6 +9,9 @@ import ItemDetallesContainer from '../Componentes/ItemListContainer/ItemDetalles
 import Error404 from '../Error404/Error404'
 
 
+
+
+
 const Rutas = () =>{
 
     return (
@@ -18,7 +21,7 @@ const Rutas = () =>{
                 <Routes>
                     <Route exact path='/' element={<Home/>} />
 
-                    <Route exact path='/product/:categoryName' element={<ItemListContainer/>} />
+                    <Route exact path="/product/:category" element={<ItemListContainer/>} />
                     <Route exact path='/item/:itemId' element={<ItemDetallesContainer/>} />
 
                     <Route exact path='/Historia' element={<Historia/>} />

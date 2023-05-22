@@ -1,10 +1,10 @@
 import ItemCount from "./ItemCount/ItemCount"
-import "./CardDetalles.css"
+import "./ItemDetail.css"
 
 
 
 
-const CardDetalles = ({id, img, name, description, stock, precio}) =>{
+const ItemDetail = ({id, img, name, description, stock, precio}) =>{
 
 
 
@@ -36,4 +36,4 @@ const CardDetalles = ({id, img, name, description, stock, precio}) =>{
 
 
 
-export default CardDetalles
+export default ItemDetail

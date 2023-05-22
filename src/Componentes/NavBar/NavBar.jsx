@@ -13,7 +13,7 @@ const NavBar = () =>{
 
             <div className="container-fluid">
 
-                <NavLink to="/" className={"navbar-brand"}><img src={LogoNbStyle} alt="Logo" id='logo' /></NavLink>
+                <NavLink to="/" className="navbar-brand"><img src={LogoNbStyle} alt="Logo" id='logo' /></NavLink>
         
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon menuBar"><img src={menuBar} alt="Menu Bar" id='menuBar' /></span>
@@ -23,21 +23,21 @@ const NavBar = () =>{
                     <ul className="navbar-nav">
 
                         <li className="nav-item">
-                            <NavLink to="/" className={"nav-link estilos"}>Home</NavLink>
+                            <NavLink to="/" className="nav-link estilos">Home</NavLink>
                         </li>
 
 
                         <li className="nav-item">
-                            <NavLink to={`/product/zapatillas`} className={"nav-link estilos"}>Zapatillas</NavLink>
+                            <NavLink to="/product/zapatillas" className="nav-link estilos">Zapatillas</NavLink>
                         </li>
 
                         <li className="nav-item">
-                            <NavLink to={`/product/ropa`}  className={"nav-link estilos"}>Ropa</NavLink>
+                            <NavLink to="/product/ropa"  className="nav-link estilos">Ropa</NavLink>
                         </li>
 
 
                         <li className="nav-item">
-                            <NavLink to="/Historia" className={"nav-link estilos"}>Historia</NavLink>
+                            <NavLink to="/Historia" className="nav-link estilos">Historia</NavLink>
                         </li>
 
 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import {getDetailsProductsId} from '../../../products'
-import CardDetalles from "../../CardDetalles/CardDetalles"
+import ItemDetail from "../../ItemDetail/ItemDetail"
 import {useParams} from 'react-router-dom'
 
 
@@ -31,7 +31,7 @@ const ItemDetallesContainer = () =>{
 
     return (
         <div>
-            <CardDetalles {...products} />
+            <ItemDetail {...products} />
         </div>
     )
 }

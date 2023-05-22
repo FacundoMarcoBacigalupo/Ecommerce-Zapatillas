@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react'
-import {getDetailsProductsCategory, getProducts} from '../../products'
+import {getProducts} from '../../products'
 import {useParams} from 'react-router-dom'
 import ItemList from '../ItemList/ItemList'
 import "./EstilosContainer.css"
@@ -12,13 +12,12 @@ const ItemListContainer = () =>{
 
     const [products, setProducts] = useState([])
 
-    const {categoryName} = useParams()
+    const {category} = useParams()
 
 
         useEffect(() => {
-            const productsFunc = categoryName ? getDetailsProductsCategory : getProducts
 
-            productsFunc(categoryName)
+            getProducts()
                 .then (Response =>{
                     setProducts(Response)
                 })
@@ -26,14 +25,15 @@ const ItemListContainer = () =>{
                 .catch (error =>{
                     console.error(error)
                 })
-        }, [categoryName])
+        }, [])
 
-
-
+        const filtered = category
+            ? products.filter((e) => e.category === category)
+            : products;
 
 
     return (
-            <ItemList products={products} />
+            <ItemList products={filtered} />
     )
 }
 

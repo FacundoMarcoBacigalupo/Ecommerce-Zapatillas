@@ -23,17 +23,3 @@ export  const getDetailsProductsId = (ProductsId)=>{
         }, 800)
         })
 }
-
-
-
-
-
-
-export  const getDetailsProductsCategory = (ProductsCategory)=>{
-    return new Promise((resolve) => {
-
-        setTimeout (() =>{
-            resolve( products.find(info=> info.Category === ProductsCategory ))
-        }, 800)
-        })
-}
