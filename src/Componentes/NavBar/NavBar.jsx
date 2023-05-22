@@ -6,7 +6,7 @@ import menuBar from "../../assets/images/MenuBar.png"
 import {NavLink} from 'react-router-dom'
 
 
-export const NavBar = () =>{
+const NavBar = () =>{
 
     return (
         <nav className="navbar navbar-expand-md navbarColor">
@@ -26,13 +26,20 @@ export const NavBar = () =>{
                             <NavLink to="/" className={"nav-link estilos"}>Home</NavLink>
                         </li>
 
+
                         <li className="nav-item">
-                        <NavLink to="/Zapatillas" className={"nav-link estilos"}>Zapatillas</NavLink>
+                            <NavLink to={`/product/zapatillas`} className={"nav-link estilos"}>Zapatillas</NavLink>
                         </li>
 
                         <li className="nav-item">
-                        <NavLink to="/Historia" className={"nav-link estilos"}>Historia</NavLink>
+                            <NavLink to={`/product/ropa`}  className={"nav-link estilos"}>Ropa</NavLink>
                         </li>
+
+
+                        <li className="nav-item">
+                            <NavLink to="/Historia" className={"nav-link estilos"}>Historia</NavLink>
+                        </li>
+
 
                         <li className="nav-item">
                             <p className="nav-link estilos"><CartWidget /></p>

@@ -5,7 +5,7 @@ import NavBar from '../Componentes/NavBar/NavBar'
 import Footer from '../Componentes/Footer/Footer'
 import Home from '../Componentes/Home/Home'
 import Historia from '../Componentes/Historia/Historia'
-import ItemDetallesContainer from '../Componentes/ItemDetallesContainer/ItemDetallesContainer'
+import ItemDetallesContainer from '../Componentes/ItemListContainer/ItemDetallesContainer/ItemDetallesContainer'
 import Error404 from '../Error404/Error404'
 
 
@@ -16,12 +16,12 @@ const Rutas = () =>{
             <NavBar />
 
                 <Routes>
-                    <Route path='/' element={<Home/>} />
+                    <Route exact path='/' element={<Home/>} />
 
-                    <Route path='/Zapatillas' element={<ItemListContainer/>} />
-                    <Route path='/item/:itemId' element={<ItemDetallesContainer/>} />
+                    <Route exact path='/product/:categoryName' element={<ItemListContainer/>} />
+                    <Route exact path='/item/:itemId' element={<ItemDetallesContainer/>} />
 
-                    <Route path='/Historia' element={<Historia/>} />
+                    <Route exact path='/Historia' element={<Historia/>} />
 
                     <Route path='*' element={<Error404/>} />
                 </Routes>

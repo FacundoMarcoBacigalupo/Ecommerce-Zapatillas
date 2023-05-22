@@ -1,4 +1,4 @@
-import ItemCount from "../ItemCount/ItemCount"
+import ItemCount from "./ItemCount/ItemCount"
 import "./CardDetalles.css"
 
 

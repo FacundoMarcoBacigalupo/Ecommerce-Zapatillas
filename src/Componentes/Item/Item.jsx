@@ -1,9 +1,9 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import "./EstilosCard.css"
+import "./EstilosItem.css"
 
 
-export const AppCard = ({id, img, name, stock, precio}) => {
+const Item = ({id, img, name, stock, precio}) => {
     return (
         <article className="carta">
 
@@ -25,4 +25,4 @@ export const AppCard = ({id, img, name, stock, precio}) => {
 
 
 
-export default AppCard
+export default Item

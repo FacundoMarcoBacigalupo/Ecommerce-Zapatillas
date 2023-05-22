@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import {obtenerDetallesProducts} from '../../products'
-import CardDetalles from "../CardDetalles/CardDetalles"
+import {getDetailsProductsId} from '../../../products'
+import CardDetalles from "../../CardDetalles/CardDetalles"
 import {useParams} from 'react-router-dom'
 
 
@@ -14,7 +14,7 @@ const ItemDetallesContainer = () =>{
 
 
         useEffect(() => {
-            obtenerDetallesProducts(itemId)
+            getDetailsProductsId(itemId)
 
             .then (Response=>{
                 setProducts(Response)

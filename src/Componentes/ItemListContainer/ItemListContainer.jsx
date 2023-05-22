@@ -1,35 +1,39 @@
-import {Fragment, useState, useEffect} from 'react'
-import {obtenerProducts} from '../../products'
+import {useState, useEffect} from 'react'
+import {getDetailsProductsCategory, getProducts} from '../../products'
+import {useParams} from 'react-router-dom'
 import ItemList from '../ItemList/ItemList'
 import "./EstilosContainer.css"
 
 
 
 
-export const ItemListContainer = () =>{
+
+const ItemListContainer = () =>{
 
     const [products, setProducts] = useState([])
 
+    const {categoryName} = useParams()
+
 
         useEffect(() => {
-            obtenerProducts()
-            .then (Response=>{
-                setProducts(Response)
-            })
+            const productsFunc = categoryName ? getDetailsProductsCategory : getProducts
 
-            .catch (error=>{
-                console.error(error)
-            })
-        }, [])
+            productsFunc(categoryName)
+                .then (Response =>{
+                    setProducts(Response)
+                })
+
+                .catch (error =>{
+                    console.error(error)
+                })
+        }, [categoryName])
 
 
 
 
 
     return (
-        <Fragment>
             <ItemList products={products} />
-        </Fragment>
     )
 }
 
