@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  text-decoration: none;
 }
 
 
@@ -22,12 +23,4 @@ body::-webkit-scrollbar-track{
 }
 body::-webkit-scrollbar-thumb{
   background-color: #d1d1d1;
-}
-
-
-
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
