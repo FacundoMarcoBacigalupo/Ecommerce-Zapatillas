@@ -3,7 +3,7 @@ import "./EstilosNavBar.css"
 import CartWidget from "../CartWidget/CartWidget"
 import LogoNbStyle from "../../assets/images/LogoNbStyle.jpg"
 import menuBar from "../../assets/images/MenuBar.png"
-import {NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 
 const NavBar = () =>{

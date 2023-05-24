@@ -4,7 +4,7 @@ import './ItemList.css'
 
 
 
-const ItemList = ({products}) =>{
+const ItemList = ({ products }) =>{
 
     return (
         <div className='posicionAppCard'>

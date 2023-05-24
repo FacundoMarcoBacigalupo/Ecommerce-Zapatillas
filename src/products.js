@@ -5,8 +5,6 @@ const products = stock
 
 
 
-
-
 export  const getProducts = ()=>{
     return new Promise((resolve) => {
         resolve(products)})

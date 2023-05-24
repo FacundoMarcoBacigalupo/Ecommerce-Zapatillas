@@ -1,6 +1,6 @@
 import React from 'react'
-import {useNavigate } from 'react-router-dom'
-import ImgError404 from '../assets/images/Error404.jpg'
+import { useNavigate } from 'react-router-dom'
+import ImgError404 from '../../assets/images/Error404.jpg'
 import "./error404.css"
 
 

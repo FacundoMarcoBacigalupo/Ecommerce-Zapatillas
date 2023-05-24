@@ -1,10 +1,10 @@
-import {useState} from 'react'
+import { useState } from 'react'
 import "./EstilosItemCount.css"
 
 
 
 
-const ItemCount = ({stock, initial=0, onAdd}) =>{
+const ItemCount = ({ stock, initial=0, onAdd }) =>{
 
     const [cantidad, setCantidad] = useState(initial)
         const sumar = () =>{

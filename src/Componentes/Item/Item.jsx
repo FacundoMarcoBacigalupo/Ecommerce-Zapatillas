@@ -1,9 +1,9 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import "./EstilosItem.css"
 
 
-const Item = ({id, img, name, stock, precio}) => {
+const Item = ({ id, img, name, stock, price }) => {
     return (
         <article className="carta">
 
@@ -14,7 +14,7 @@ const Item = ({id, img, name, stock, precio}) => {
             <div className="info-product">
                 <h2>{name}</h2>
                 <h4>Stock disponible: {stock}</h4>
-                <p className="price">${precio}</p>
+                <p className="price">${price}</p>
 
                 <Link className='efectoBoton' to={`/item/${id}`}>Ver detalles</Link>
             </div>

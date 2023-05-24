@@ -20,6 +20,10 @@
     color: #eeeeee;
 }
 
+#titulo::first-letter{
+    font-size: 60px;
+}
+
 
 
 

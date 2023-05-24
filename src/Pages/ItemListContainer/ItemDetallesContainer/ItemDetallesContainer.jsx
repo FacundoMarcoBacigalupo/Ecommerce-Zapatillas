@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import {getDetailsProductsId} from '../../../products'
-import ItemDetail from "../../ItemDetail/ItemDetail"
-import {useParams} from 'react-router-dom'
+import { getDetailsProductsId } from '../../../products'
+import ItemDetail from "../../../Componentes/ItemDetail/ItemDetail"
+import { useParams } from 'react-router-dom'
 
 
 

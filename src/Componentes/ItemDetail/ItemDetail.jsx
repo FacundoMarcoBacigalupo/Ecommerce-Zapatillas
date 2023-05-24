@@ -1,26 +1,36 @@
-import {Fragment, useState} from "react"
-import {Link} from "react-router-dom"
+import { useContext, useState } from "react"
+import { Link } from "react-router-dom"
+import { CartContext } from "../Context/CartContext"
 import ItemCount from "./ItemCount/ItemCount"
 import "./ItemDetail.css"
 
 
 
 
-const ItemDetail = ({id, img, name, description, stock, precio}) =>{
 
+const ItemDetail = ({ id, img, name, description, stock, price }) =>{
     const [quantityAdded, setQuantityAdded] = useState(0)
+
+
+    const { addItem } = useContext(CartContext)
+
 
     const handleOnAdd = (quantity) =>{
         setQuantityAdded(quantity)
+
+
+        const item ={
+            id, name, price
+        }
+        addItem(item, quantity)
     }
 
 
-
-    const MostrarCantidad = () =>{
+    const ShowQuantity = () =>{
         if (quantityAdded > 0){
             return(
                 <>
-                    <h5 className='description'>Cantidad: {quantityAdded}</h5>
+                    <h5 className="mostrarCantidad">Cantidad: {quantityAdded}</h5>
 
                     <Link to="/Cart" className="efectoBoton">Terminar compra</Link>
                 </>
@@ -29,24 +39,26 @@ const ItemDetail = ({id, img, name, description, stock, precio}) =>{
     }
 
 
+
     return (
-        <div className='posicionCardDetalles'>
-            <article className="carta" id={id}>
+        <div className='posicionCardDetallesDetail'>
+            <article className="cartaDetail" id={id}>
 
                 <picture>
-                    <img src={img} className="card-img-top" alt={name} />
+                    <img src={img} alt={name} />
                 </picture>
 
-                <section className="info-product">
+                <section className="info-productDetail">
                     <h2>{name}</h2>
-                    <p className='description'>{description}</p>
+                    <p className='descriptionDetail'>{description}</p>
                     <h5>Stock disponible: {stock}</h5>
-                    <p className="price">${precio}</p>
+                    <p className="priceDetail">${price}</p>
 
-                    <footer className='posicionItemCount'>
+
+                    <footer className='posicionItemCountDetail'>
                         {
                             quantityAdded > 0 ?(
-                                MostrarCantidad()
+                                ShowQuantity()
                             ) :(
                                 <ItemCount initial={0}  stock={stock} onAdd={handleOnAdd}/>
                             )
@@ -58,6 +70,8 @@ const ItemDetail = ({id, img, name, description, stock, precio}) =>{
         </div>
     )
 }
+
+
 
 
 

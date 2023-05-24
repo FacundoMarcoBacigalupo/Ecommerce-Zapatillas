@@ -5,7 +5,7 @@
         "name": "Nike Air Force",
         "description": "Zapatillas perfectas desde cualquier punto de vista, se puede hacer deporte con ellas hasta ir a una boda, y combinan con cualquier outfit.",
         "stock": 15,
-        "precio": 15000,
+        "price": 15000,
         "category": "zapatillas"
     },
 
@@ -15,7 +15,7 @@
         "name": "Vans",
         "description": "Muy buenas zapatillas para usar en cualquier encuentro social y fácil de combinar con todo.",
         "stock": 10,
-        "precio": 11000,
+        "price": 11000,
         "category": "zapatillas"
     },
 
@@ -25,7 +25,7 @@
         "name": "Converse Botas",
         "description": "Zapatillas sencillas, facheras, sirven casi todas las ocasiones y lo más importante fácil de combinar.",
         "stock": 8,
-        "precio": 9000,
+        "price": 9000,
         "category": "zapatillas"
     },
     
@@ -35,7 +35,7 @@
         "name": "Ojotas Vans Slide",
         "description": "Ojotas Vans Slide, perfectas para la playa y para andar comod@ en casa.",
         "stock": 4,
-        "precio": 6000,
+        "price": 6000,
         "category": "zapatillas"
     },
 
@@ -45,7 +45,7 @@
         "name": "Nike Jordan Air",
         "description": "Nike Jordan Air, muy facheras, fáciles de combinar y perfectas para lucirlas en cualquier ámbito.",
         "stock": 9,
-        "precio": 18000,
+        "price": 18000,
         "category": "zapatillas"
     },
 
@@ -55,7 +55,7 @@
         "name": "Adidas Forum",
         "description": "Adidas Forum, elegantes y minimalistas, hechas para usar en casi cualquier ocasión.",
         "stock": 12,
-        "precio": 17000,
+        "price": 17000,
         "category": "zapatillas"
     },
 
@@ -65,7 +65,7 @@
         "name": "Adidas",
         "description": "Remera 80% hecha de algodón y es una buena opción para usar de remera deportiva.",
         "stock": 24,
-        "precio": 10000,
+        "price": 10000,
         "category": "ropa"
     },
 
@@ -75,7 +75,7 @@
         "name": "Nike",
         "description": "Remera 100% hecha de algodón, combinable con todo.",
         "stock": 22,
-        "precio": 10000,
+        "price": 10000,
         "category": "ropa"
     },
 
@@ -85,7 +85,7 @@
         "name": "Jordan",
         "description": "Remera 90% hecha de algodón, muy fácil de combinar con cualquier cosa.",
         "stock": 15,
-        "precio": 12000,
+        "price": 12000,
         "category": "ropa"
     },
 
@@ -95,7 +95,7 @@
         "name": "Bulls",
         "description": "Remera 100% hecha de algodón, genial para jugar basketball o solo para lucirla.",
         "stock": 28,
-        "precio": 15000,
+        "price": 15000,
         "category": "ropa"
     },
 
@@ -105,7 +105,7 @@
         "name": "Afa 3 Estrellas",
         "description": "Remera 90% hecha de algodón pero CAMPEONA DEL MUNDO, muy fácil de combinar con cualquier cosa y lucir como un CAMPEÓN.",
         "stock": 30,
-        "precio": 18000,
+        "price": 18000,
         "category": "ropa"
     },
 
@@ -115,7 +115,7 @@
         "name": "Thunder Block",
         "description": "Remera 100% hecha de algodón con un estilo raro pero bueno y muy combinable.",
         "stock": 8,
-        "precio": 25000,
+        "price": 25000,
         "category": "ropa"
     }
 ]

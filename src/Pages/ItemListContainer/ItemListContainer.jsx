@@ -1,7 +1,7 @@
-import {useState, useEffect} from 'react'
-import {getProducts} from '../../products'
-import {useParams} from 'react-router-dom'
-import ItemList from '../ItemList/ItemList'
+import { useState, useEffect } from 'react'
+import { getProducts } from '../../products'
+import { useParams } from 'react-router-dom'
+import ItemList from '../../Componentes/ItemList/ItemList'
 import "./EstilosContainer.css"
 
 
