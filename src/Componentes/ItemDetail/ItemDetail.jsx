@@ -1,7 +1,7 @@
-import { useContext, useState } from "react"
+import { useCartContext } from "../Context/CartContext"
 import { Link } from "react-router-dom"
-import { CartContext } from "../Context/CartContext"
-import ItemCount from "./ItemCount/ItemCount"
+import { useState } from "react"
+import ItemCount from "../ItemCount/ItemCount"
 import "./ItemDetail.css"
 
 
@@ -12,7 +12,7 @@ const ItemDetail = ({ id, img, name, description, stock, price }) =>{
     const [quantityAdded, setQuantityAdded] = useState(0)
 
 
-    const { addItem } = useContext(CartContext)
+    const { addProduct } = useCartContext();
 
 
     const handleOnAdd = (quantity) =>{
@@ -22,7 +22,7 @@ const ItemDetail = ({ id, img, name, description, stock, price }) =>{
         const item ={
             id, name, price
         }
-        addItem(item, quantity)
+        addProduct(item, quantity)
     }
 
 

@@ -1,3 +1,4 @@
+import CartProvider from "./Componentes/Context/CartContext";
 import Rutas from './Rutas/Rutas';
 
 
@@ -7,7 +8,9 @@ function App() {
 
   return (
     <div className="App">
-      <Rutas />
+      <CartProvider>
+        <Rutas />
+      </CartProvider>
     </div>
   );
 }

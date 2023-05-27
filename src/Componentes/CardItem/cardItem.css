@@ -1,0 +1,13 @@
+.contenedorCardItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    filter: drop-shadow(0px 2px 3px #696969);
+}
+
+
+
+.efectoSolo{
+    margin: 20px;
+}

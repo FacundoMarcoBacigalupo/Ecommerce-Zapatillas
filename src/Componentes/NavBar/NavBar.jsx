@@ -41,9 +41,9 @@ const NavBar = () =>{
                         </li>
 
 
-                        <li className="nav-item">
+                        <ul className="nav-item">
                             <p className="nav-link estilos"><CartWidget /></p>
-                        </li>
+                        </ul>
                     </ul>
                 </div>
             </div>
