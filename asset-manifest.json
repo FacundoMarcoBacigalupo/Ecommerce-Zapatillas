@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/PreEntrega2MarcoBacigalupo/static/css/main.22ba92f3.css",
+    "main.js": "/PreEntrega2MarcoBacigalupo/static/js/main.3fd46dd9.js",
+    "static/js/787.ba58f5ab.chunk.js": "/PreEntrega2MarcoBacigalupo/static/js/787.ba58f5ab.chunk.js",
+    "static/media/Fondo.jpg": "/PreEntrega2MarcoBacigalupo/static/media/Fondo.d5b5edde6e06e9ab299e.jpg",
+    "static/media/Error404.jpg": "/PreEntrega2MarcoBacigalupo/static/media/Error404.b61921fb79eab50e605c.jpg",
+    "static/media/LogoNbStyle.jpg": "/PreEntrega2MarcoBacigalupo/static/media/LogoNbStyle.b5df1deb5c0432bc9ace.jpg",
+    "index.html": "/PreEntrega2MarcoBacigalupo/index.html",
+    "main.22ba92f3.css.map": "/PreEntrega2MarcoBacigalupo/static/css/main.22ba92f3.css.map",
+    "main.3fd46dd9.js.map": "/PreEntrega2MarcoBacigalupo/static/js/main.3fd46dd9.js.map",
+    "787.ba58f5ab.chunk.js.map": "/PreEntrega2MarcoBacigalupo/static/js/787.ba58f5ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.22ba92f3.css",
+    "static/js/main.3fd46dd9.js"
+  ]
+}
