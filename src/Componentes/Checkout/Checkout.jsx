@@ -10,7 +10,7 @@ import CheckoutForm from '../CheckoutForm/CheckoutForm'
 
 
 const Checkout = () =>{
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(false)
     const [orderId, setOrderId] = useState("")
 
 
