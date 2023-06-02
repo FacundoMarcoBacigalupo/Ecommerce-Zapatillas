@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PreEntrega2MarcoBacigalupo/static/css/main.38fd149d.css",
-    "main.js": "/PreEntrega2MarcoBacigalupo/static/js/main.16b6b74b.js",
+    "main.js": "/PreEntrega2MarcoBacigalupo/static/js/main.d8f70082.js",
     "static/js/787.ba58f5ab.chunk.js": "/PreEntrega2MarcoBacigalupo/static/js/787.ba58f5ab.chunk.js",
     "static/media/carrito.jpg": "/PreEntrega2MarcoBacigalupo/static/media/carrito.4a217f728ad86edf7bd3.jpg",
     "static/media/Fondo.jpg": "/PreEntrega2MarcoBacigalupo/static/media/Fondo.d5b5edde6e06e9ab299e.jpg",
@@ -12,11 +12,11 @@
     "static/media/shoe2.png": "/PreEntrega2MarcoBacigalupo/static/media/shoe2.510cd11ad8b3e0537865.png",
     "index.html": "/PreEntrega2MarcoBacigalupo/index.html",
     "main.38fd149d.css.map": "/PreEntrega2MarcoBacigalupo/static/css/main.38fd149d.css.map",
-    "main.16b6b74b.js.map": "/PreEntrega2MarcoBacigalupo/static/js/main.16b6b74b.js.map",
+    "main.d8f70082.js.map": "/PreEntrega2MarcoBacigalupo/static/js/main.d8f70082.js.map",
     "787.ba58f5ab.chunk.js.map": "/PreEntrega2MarcoBacigalupo/static/js/787.ba58f5ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.38fd149d.css",
-    "static/js/main.16b6b74b.js"
+    "static/js/main.d8f70082.js"
   ]
 }
