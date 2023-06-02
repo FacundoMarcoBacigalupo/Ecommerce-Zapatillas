@@ -1,12 +1,10 @@
 import { useState } from 'react'
-import { useCartContext } from '../../Context/CartContext'
 
 
 
 
 
 const CheckoutForm = ({ onConfirm }) => {
-    const { validateAllFull } = useCartContext()
 
     const [name, setName] = useState("")
     const [phone, setPhone] = useState("")
@@ -21,8 +19,6 @@ const CheckoutForm = ({ onConfirm }) => {
             name, phone, email
         }
 
-        if (validateAllFull(userData)) {
-            alert("No, mal")}
 
         onConfirm(userData)
     }

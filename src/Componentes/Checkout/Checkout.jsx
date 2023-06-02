@@ -29,7 +29,7 @@ const Checkout = () =>{
                     email
                 },
                 items: cart,
-                total: totalPrice,
+                total: totalPrice(),
                 date: Timestamp.fromDate(new Date())
             }
 

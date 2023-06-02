@@ -66,14 +66,8 @@ const CartProvider = ({ children }) => {
 
 
 
-	const validateAllFull = (camps) =>{
-		return camps.some((camp) => camp === "")
-	}
-
-
-
 	return (
-		<CartContext.Provider value={{ clearCart, isInCart, removeProduct, addProduct, totalPrice, totalProducts, validateAllFull, cart }}>
+		<CartContext.Provider value={{ clearCart, isInCart, removeProduct, addProduct, totalPrice, totalProducts, cart }}>
 			{children}
 		</CartContext.Provider>
 	)
