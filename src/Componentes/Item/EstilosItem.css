@@ -4,32 +4,33 @@
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
-        background-color: #d1d1d1;
+    background-color: #d1d1d1;
 }
-
 .carta:hover{
     border-radius: 10px;
     box-shadow: 5px 10px 5px #111111
 }
 
+
+
 .carta img{
     width: 100%;
+    height: 200px;
     object-fit: cover;
     transition: all .5s;
 }
 .carta:hover img{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
-
-
 .carta figure{
     overflow: hidden;
 }
 
 
+
+
 .info-product{
     padding: 15px 30px;
-    line-height: 2;
     display: flex;
     flex-direction: column;
     text-align: center;

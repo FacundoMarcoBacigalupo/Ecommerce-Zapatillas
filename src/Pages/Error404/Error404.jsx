@@ -15,9 +15,11 @@ const Error404 = () => {
             <h1><strong>Error 404</strong></h1>
             <p>La pagina que busca no existe, vuelva a la anterior</p>
 
-            <button className='efectoBoton' onClick={()=> navigate(-1)}>Volver</button>
+            <button style={{width:"90%"}} className='efectoBoton' onClick={()=> navigate(-1)}>Volver</button>
 
-            <img src={ImgError404} alt="Foto de Error 404" />
+            <picture>
+                <img src={ImgError404} alt="Foto de Error 404" />
+            </picture>
         </section>
     )
 }

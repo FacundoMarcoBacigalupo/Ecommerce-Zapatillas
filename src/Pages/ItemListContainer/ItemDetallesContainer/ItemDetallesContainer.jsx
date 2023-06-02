@@ -1,33 +1,45 @@
 import { useEffect, useState } from 'react'
-import { getDetailsProductsId } from '../../../products'
 import ItemDetail from "../../../Componentes/ItemDetail/ItemDetail"
 import { useParams } from 'react-router-dom'
+
+import { getDoc, doc } from 'firebase/firestore'
+import { db } from '../../../FireBase/firebase.config'
+import Loading from '../../../Componentes/Loading/Loading'
 
 
 
 
 const ItemDetallesContainer = () =>{
     const [products, setProducts] = useState(null)
+    const [loading, setLoading] = useState(true)
 
     const {itemId} = useParams()
 
 
 
         useEffect(() => {
-            getDetailsProductsId(itemId)
+            setLoading(true)
 
-            .then (Response=>{
-                setProducts(Response)
-            })
+            const docR = doc( db, "Products", itemId )
 
-            .catch (error=>{
-                console.error(error)
-            })
+            getDoc(docR)
+                .then( response =>{
+                    const productsAdapted = {id:response.id, ...response.data()}
+                    setProducts(productsAdapted)
+                } )
+
+
+                .catch( error => console.error(error))
+
+                .finally( () => setLoading(false))
         }, [itemId])
 
 
 
 
+    if (loading){
+        return <Loading />
+    }
 
     return (
         <div>

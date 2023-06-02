@@ -25,20 +25,23 @@
     background-color: #d1d1d1;
     overflow: hidden;
 }
-
 .cartaDetail:hover{
     border-radius: 10px;
     box-shadow: 5px 10px 5px #111111
 }
 
-.cartaDetail img{
+
+
+picture img{
     width: 100%;
-    object-fit: cover;
+    height: 400px;
+    object-position: center;
 }
-.cartaDetail:hover img{
+picture:hover img{
     transform: scale(.9);
     transition: all .8s;
 }
+
 
 
 .info-productDetail{
@@ -63,12 +66,12 @@
 }
 
 
+
 .mostrarCantidad{
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 20px;
 }
-
 .mostrarCantidad::first-letter{
     font-size: 25px;
 }

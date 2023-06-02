@@ -1,8 +1,8 @@
                                                         /*Pie de pagina*/
 .containerFooter{
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
     
     grid-template-areas:
         "fotoFooter redesFooter redesFooter"
@@ -126,8 +126,8 @@
 @media (min-width: 600px) and (max-width: 900px){
     .containerFooter{
         display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: auto auto;
         
         grid-template-areas:
             "fotoFooter redesFooter"
@@ -166,7 +166,7 @@
 @media (max-width: 600px){
     .containerFooter{
         display: grid;
-        grid-template-rows: auto;
+        grid-template-rows: auto auto auto auto;
         grid-template-columns: auto;
         
         grid-template-areas:

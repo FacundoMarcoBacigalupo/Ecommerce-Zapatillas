@@ -6,7 +6,6 @@ import "./EstilosItem.css"
 const Item = ({ id, img, name, stock, price }) => {
     return (
         <article className="carta">
-
             <figure>
                 <img src={img} className="card-img-top" alt={name} />
             </figure>
@@ -18,7 +17,6 @@ const Item = ({ id, img, name, stock, price }) => {
 
                 <Link className='efectoBoton' to={`/item/${id}`}>Ver detalles</Link>
             </div>
-
         </article>
     )
 }

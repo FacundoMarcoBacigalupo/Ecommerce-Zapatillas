@@ -1,21 +1,11 @@
-import { useState } from 'react'
+import useItemCout from "../../Hooks/useItemCout"
 import "./EstilosItemCount.css"
-
 
 
 
 const ItemCount = ({ stock, initial=0, onAdd }) =>{
 
-    const [cantidad, setCantidad] = useState(initial)
-        const sumar = () =>{
-            if (cantidad < stock)
-            setCantidad(cantidad + 1);  
-        }
-
-        const restar = () =>{
-            if (cantidad >= 1)
-            setCantidad(cantidad - 1);
-        }
+    const {cantidad, sumar, restar} = useItemCout(initial, stock)
 
 
 

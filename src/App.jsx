@@ -1,4 +1,4 @@
-import CartProvider from "./Componentes/Context/CartContext";
+import CartProvider from "./Context/CartContext";
 import Rutas from './Rutas/Rutas';
 
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useCartContext } from "../../Componentes/Context/CartContext";
+import { useCartContext } from "../../Context/CartContext";
+import carrito from '../../assets/images/carrito.jpg'
 import CardItem from '../../Componentes/CardItem/CardItem'
 
 
@@ -16,10 +17,10 @@ const Cart = () => {
 			</div>
 
 			<picture>
-				<img src="../../assets/images/carritoVacio.png" alt="Imagen cuando el carrito esta vacio" />
+				<img style={{width:"100%", height:"600px", objectFit:"cover", objectPosition:"center"}} src={carrito} alt="Imagen cuando el carrito esta vacio" />
 			</picture>
 			</>
-		);
+		)
 	}
 
 
@@ -28,15 +29,18 @@ const Cart = () => {
 
 	return (
 		<>
-			{cart.map((product) => (
-				<CardItem key={product.id} product={product} />
+			{cart.map((product,index) => (
+				<CardItem key={index} product={product} />
 			))}
 			<div style={{display: "flex", justifyContent: "center", alignItems:"center"}}>
 				<h1 style={{fontSize:"35px", fontWeight:"bold", margin:"20px"}}>Total: {totalPrice()}</h1>
-				<button style={{marginBottom:"20px", color:"#05B222", width:"80%", textAlign:"center"}} className="efectoBoton">Emitir compra</button>
+
+				<Link to='/checkout' style={{marginBottom:"20px", color:"#05B222", width:"80%", textAlign:"center"}} className="efectoBoton">Emitir compra</Link>
 			</div>
 		</>
-	);
-};
+	)
+}
+
+
 
 export default Cart;
