@@ -4,6 +4,8 @@ import { db } from '../../FireBase/firebase.config'
 import { Timestamp, addDoc, collection, documentId, getDocs, query, where, writeBatch } from 'firebase/firestore'
 import Loading from '../Loading/Loading'
 import CheckoutForm from '../CheckoutForm/CheckoutForm'
+import thx from '../../assets/images/thankYou.gif'
+import "./checkout.css"
 
 
 
@@ -88,20 +90,24 @@ const Checkout = () =>{
 
 
 
-
     if(loading){
         return <Loading />
     }
 
     if(orderId){
-        return <h1>El id de su orden es :{orderId}</h1>
-    }
+        return(
+            <main id='containerId'>
+                <h1>El ID de su orden es : <span>{orderId}</span></h1>
+                <h2>¡Gracias por su compra!</h2>
+
+                <img id='imgId' src={thx} alt="" />
+            </main>
+    )}
 
 
 
     return (
         <div>
-            <h1><strong>Checkout</strong></h1>
             <CheckoutForm onConfirm={createOrder} />
         </div>
     )

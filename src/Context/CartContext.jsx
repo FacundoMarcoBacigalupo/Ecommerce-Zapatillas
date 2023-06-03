@@ -60,14 +60,18 @@ const CartProvider = ({ children }) => {
 
 
 	const removeProduct = (id) =>
-		setCart(cart.filter((product) => product.id !== id));
+		setCart(cart.filter(product => product.id !== id));
 
 
 
+
+	const allFull = (camps) => {
+	return camps.some(camp => camp === "")
+	}
 
 
 	return (
-		<CartContext.Provider value={{ clearCart, isInCart, removeProduct, addProduct, totalPrice, totalProducts, cart }}>
+		<CartContext.Provider value={{ clearCart, isInCart, removeProduct, addProduct, totalPrice, totalProducts, allFull, cart }}>
 			{children}
 		</CartContext.Provider>
 	)

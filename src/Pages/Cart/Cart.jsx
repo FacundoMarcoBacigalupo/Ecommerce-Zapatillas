@@ -17,7 +17,7 @@ const Cart = () => {
 			</div>
 
 			<picture>
-				<img style={{width:"100%", height:"600px", objectFit:"cover", objectPosition:"center"}} src={carrito} alt="Imagen cuando el carrito esta vacio" />
+				<img style={{width:"90%", height:"600px", objectFit:"cover", objectPosition:"center"}} src={carrito} alt="Imagen cuando el carrito esta vacio" />
 			</picture>
 			</>
 		)

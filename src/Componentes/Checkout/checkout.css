@@ -1,0 +1,18 @@
+#containerId{
+    margin: 20px;
+    font-weight: bold;
+    text-align: center;
+    filter: drop-shadow(10px 15px 30px #252525);
+}
+
+
+#containerId span{
+    color: #240000;
+}
+
+
+#imgId{
+    border-radius: 80px;
+    width: 90%;
+    height: 500px;
+}

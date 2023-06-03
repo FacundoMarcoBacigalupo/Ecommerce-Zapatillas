@@ -13,8 +13,9 @@
 #historiaNbstyle p{
     font-size: 20px;
     font-weight: 400;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 #historiaNbstyle p::first-letter{
-    font-size: 40px;
+    font-size: 25px;
+    font-weight: bold;
 }

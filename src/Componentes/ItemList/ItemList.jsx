@@ -1,3 +1,4 @@
+import { memo } from 'react'
 import Item from '../Item/Item'
 import Loading from '../Loading/Loading'
 import './ItemList.css'
@@ -5,19 +6,18 @@ import './ItemList.css'
 
 
 
-const ItemList = ({ products }) =>{
+const ItemList = memo(({ products }) =>{
 
     return (
         <div className='posicionAppCard'>
             {
                 products.length > 0
-                ? products.map(info => <Item key={info.id} {...info} />)
+                ? products.map(data => <Item key={data.id} {...data} />)
                 : <Loading/>
             }
         </div>
     )
-}
-
+},(prevProps, nextProps) => prevProps.products === nextProps.products);
 
 
 export default ItemList

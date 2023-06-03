@@ -1,10 +1,13 @@
 import { useState } from 'react'
-
+import { useCartContext } from '../../Context/CartContext'
+import swal from "sweetalert2"
+import "./checkoutForm.css"
 
 
 
 
 const CheckoutForm = ({ onConfirm }) => {
+    const { allFull } = useCartContext()
 
     const [name, setName] = useState("")
     const [phone, setPhone] = useState("")
@@ -19,6 +22,19 @@ const CheckoutForm = ({ onConfirm }) => {
             name, phone, email
         }
 
+        if (allFull([name, phone, email])) {
+            swal.fire({
+                title: "Oops!",
+                text: "Faltan campos por llenar",
+                icon: "error",
+            })
+            return
+        }
+        swal.fire({
+                title: "Genial!",
+                text: "Su orden de compra se envio correctamente",
+                icon: "success",
+        })
 
         onConfirm(userData)
     }
@@ -28,24 +44,32 @@ const CheckoutForm = ({ onConfirm }) => {
 
 
     return (
-        <form onSubmit={handleConfirm}>
-            <label className='labelForm'>
-                Nombre
-                <input type="text" value={name} onChange={({ target }) => setName(target.value)}/>
-            </label>
+        <main id="containerForm">
+            <form className="form" onSubmit={handleConfirm}>
+                <h1 id="titleForm">Checkout</h1>
+                <div className="input-container ic1">
+                    <input className="input" placeholder=" " type="text" value={name} onChange={({ target }) => setName(target.value)} />
+                    <div className="cut"></div>
+                    <label className="placeholder">Nombre</label>
+                </div>
 
-            <label className='labelForm'>
-                Celular
-                <input type="text" value={phone} onChange={({ target }) => setPhone(target.value)}/>
-            </label>
 
-            <label className='labelForm'>
-                Email
-                <input type="text" value={email} onChange={({ target }) => setEmail(target.value)}/>
-            </label>
+                <div className="input-container ic2">
+                    <input className="input" placeholder=" " type="number" value={phone} onChange={({ target }) => setPhone(target.value)} />
+                    <div className="cut"></div>
+                    <label className="placeholder">Celular</label>
+                </div>
 
-            <button type='submit' className='efectoBoton'>Crear orden</button>
-        </form>
+
+                <div className="input-container ic2">
+                    <input className="input" placeholder=" " type="email" value={email} onChange={({ target }) => setEmail(target.value)} />
+                    <div className="cut cut-short"></div>
+                    <label className="placeholder">Email</label>
+                </div>
+
+                <button type='submit' className='botonForm'>Crear orden</button>
+            </form>
+        </main>
     )
 }
 
