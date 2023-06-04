@@ -25,7 +25,6 @@
     font-weight: 400;
     text-align: center;
     margin: 10px;
-    margin-right: 20px;
 }
 
 
@@ -102,7 +101,6 @@
 
 .copyrightFooter{
     grid-area: copyrightFooter;
-    padding: 5px 5px;
     font-size: 16px;
     font-weight: 600;
     text-align: center;
@@ -110,60 +108,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 600px) and (max-width: 900px){
-    .containerFooter{
-        display: grid;
-        grid-template-rows: auto auto auto auto;
-        grid-template-columns: auto auto;
-        
-        grid-template-areas:
-            "fotoFooter redesFooter"
-            "fotoFooter redesFooter"
-            "fotoFooter serviciosFooter"
-            "copyrightFooter copyrightFooter";
-        
-        grid-gap: 40px;
-        background-color: #111111;
-        color: #dbdbdb;
-    }
-
-
-    .fotoFooter{
-        grid-area: fotoFooter;
-        padding-top: 0px;
-        padding-left: 30px;
-        border-radius: 90px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 600px){
+@media (max-width: 800px){
     .containerFooter{
         display: grid;
         grid-template-rows: auto auto auto auto;
@@ -175,9 +120,7 @@
             "redesFooter"
             "copyrightFooter";
         
-        grid-gap: 40px;
-        background-color: #111111;
-        color: #dbdbdb;
+        grid-gap: 10px;
     }
 
 
@@ -188,4 +131,36 @@
         border-radius: 90px;
     }
 
+}
+
+
+
+
+
+
+
+@media (max-width: 500px){
+    #tiktok img{
+        width: 40px;
+        height: 40px;
+        margin-right: 0px;
+    }
+
+    #ig img{
+        width: 40px;
+        height: 40px;
+        margin-right: 0px;
+    }
+
+    #fb img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .copyrightFooter{
+        grid-area: copyrightFooter;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+    }
 }
