@@ -3,6 +3,17 @@ import { Link } from "react-router-dom";
 import { useCartContext } from "../../Context/CartContext";
 import carrito from '../../assets/images/carrito.jpg'
 import CardItem from '../../Componentes/CardItem/CardItem'
+import img1 from "../../assets/images/1.jpg"
+import img2 from "../../assets/images/2.jpg"
+import img3 from "../../assets/images/3.jpg"
+import img4 from "../../assets/images/4.jpg"
+import img5 from "../../assets/images/5.jpg"
+import img6 from "../../assets/images/6.jpg"
+import img7 from "../../assets/images/7.jpg"
+import img8 from "../../assets/images/8.jpg"
+import img9 from "../../assets/images/9.jpg"
+import "./cart.css"
+
 
 
 const Cart = () => {
@@ -35,8 +46,22 @@ const Cart = () => {
 			<div style={{display: "flex", justifyContent: "center", alignItems:"center"}}>
 				<h1 style={{fontSize:"35px", fontWeight:"bold", margin:"20px"}}>Total: {totalPrice()}</h1>
 
-				<Link to='/checkout' style={{marginBottom:"20px", color:"#05B222", width:"80%", textAlign:"center"}} className="efectoBoton">Emitir compra</Link>
+				<Link to='/checkout' style={{marginBottom:"20px", color:"#05B222", width:"80%", textAlign:"center"}} className="efectoBoton">Emitir compra</Link> 
 			</div>
+
+			<article class="marquee">
+					<ul class="marquee__content">
+						<li className="marquee__item"><img src={img1} /></li>
+						<li className="marquee__item"><img src={img2} /></li>
+						<li className="marquee__item"><img src={img3} /></li>
+						<li className="marquee__item"><img src={img4} /></li>
+						<li className="marquee__item"><img src={img5} /></li>
+						<li className="marquee__item"><img src={img6} /></li>
+						<li className="marquee__item"><img src={img7} /></li>
+						<li className="marquee__item"><img src={img8} /></li>
+						<li className="marquee__item"><img src={img9} /></li>
+					</ul>
+				</article>
 		</>
 	)
 }

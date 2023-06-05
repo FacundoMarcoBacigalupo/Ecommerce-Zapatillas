@@ -15,8 +15,8 @@ const CheckoutForm = ({ onConfirm }) => {
 
 
 
-    const handleConfirm = (evente) =>{
-        evente.preventDefault()
+    const handleConfirm = (event) =>{
+        event.preventDefault()
 
         const userData = {
             name, phone, email
@@ -46,7 +46,7 @@ const CheckoutForm = ({ onConfirm }) => {
     return (
         <main id="containerForm">
             <form className="form" onSubmit={handleConfirm}>
-                <h1 id="titleForm">Checkout</h1>
+                <h1 id="titleForm">Verificar</h1>
                 <div className="input-container ic1">
                     <input className="input" placeholder=" " type="text" value={name} onChange={({ target }) => setName(target.value)} />
                     <div className="cut"></div>

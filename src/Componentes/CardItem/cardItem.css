@@ -11,3 +11,18 @@
 .efectoSolo{
     margin: 20px;
 }
+
+
+
+
+
+
+
+
+@media (max-width: 630px){
+    .contenedorCardItem{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,30 @@
+.marquee {
+    margin-top: 50px;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.marquee li img{
+    width: 400px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+
+.marquee__content {
+    display: flex;
+    list-style: none;
+    animation: scrolling 30s linear infinite;
+}
+
+.marquee__item img{
+    flex-shrink: 0;
+}
+
+@keyframes scrolling {
+    0% { transform: translateX(0)}
+
+    100% { transform: translateX(-140%)}
+}
