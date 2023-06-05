@@ -49,8 +49,8 @@ const Cart = () => {
 				<Link to='/checkout' style={{marginBottom:"20px", color:"#05B222", width:"80%", textAlign:"center"}} className="efectoBoton">Emitir compra</Link> 
 			</div>
 
-			<article class="marquee">
-					<ul class="marquee__content">
+			<article className="marquee">
+					<ul className="marquee__content">
 						<li className="marquee__item"><img src={img1} /></li>
 						<li className="marquee__item"><img src={img2} /></li>
 						<li className="marquee__item"><img src={img3} /></li>
