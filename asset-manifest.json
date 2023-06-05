@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/PF-MarcoBacigalupo/static/css/main.5742521d.css",
-    "main.js": "/PF-MarcoBacigalupo/static/js/main.224945f3.js",
+    "main.css": "/PF-MarcoBacigalupo/static/css/main.0fc2dd81.css",
+    "main.js": "/PF-MarcoBacigalupo/static/js/main.f9aefef7.js",
     "static/js/787.ba58f5ab.chunk.js": "/PF-MarcoBacigalupo/static/js/787.ba58f5ab.chunk.js",
+    "static/media/2.jpg": "/PF-MarcoBacigalupo/static/media/2.d5e01b942d0744da1aff.jpg",
     "static/media/carrito.jpg": "/PF-MarcoBacigalupo/static/media/carrito.4a217f728ad86edf7bd3.jpg",
     "static/media/Fondo.jpg": "/PF-MarcoBacigalupo/static/media/Fondo.d5b5edde6e06e9ab299e.jpg",
     "static/media/Error404.jpg": "/PF-MarcoBacigalupo/static/media/Error404.b61921fb79eab50e605c.jpg",
     "static/media/thankYou.gif": "/PF-MarcoBacigalupo/static/media/thankYou.78f0dc570c35d7897892.gif",
     "static/media/LogoNbStyle.jpg": "/PF-MarcoBacigalupo/static/media/LogoNbStyle.b5df1deb5c0432bc9ace.jpg",
     "index.html": "/PF-MarcoBacigalupo/index.html",
-    "main.5742521d.css.map": "/PF-MarcoBacigalupo/static/css/main.5742521d.css.map",
-    "main.224945f3.js.map": "/PF-MarcoBacigalupo/static/js/main.224945f3.js.map",
+    "main.0fc2dd81.css.map": "/PF-MarcoBacigalupo/static/css/main.0fc2dd81.css.map",
+    "main.f9aefef7.js.map": "/PF-MarcoBacigalupo/static/js/main.f9aefef7.js.map",
     "787.ba58f5ab.chunk.js.map": "/PF-MarcoBacigalupo/static/js/787.ba58f5ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5742521d.css",
-    "static/js/main.224945f3.js"
+    "static/css/main.0fc2dd81.css",
+    "static/js/main.f9aefef7.js"
   ]
 }
