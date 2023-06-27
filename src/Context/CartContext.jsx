@@ -51,7 +51,7 @@ const CartProvider = ({ children }) => {
 
 
 	const isInCart = (id) =>
-		cart.some((product) => product.id === id);
+		cart.some(product => product.id === id);
 
 
 
@@ -63,7 +63,7 @@ const CartProvider = ({ children }) => {
 
 
 	const allFull = (camps) => {
-	return camps.some(camp => camp === "")
+		return camps.some(camp => camp === "")
 	}
 
 

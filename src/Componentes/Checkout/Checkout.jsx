@@ -20,7 +20,7 @@ const Checkout = () =>{
 
 
 
-    const createOrder = async ({name, phone, email}) =>{
+    const createOrder = async({name, phone, email}) =>{
         setLoading(true)
 
         try{

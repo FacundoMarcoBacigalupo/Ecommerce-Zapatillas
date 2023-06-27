@@ -61,7 +61,7 @@ const Cart = () => {
 						<li className="marquee__item"><img src={img8} /></li>
 						<li className="marquee__item"><img src={img9} /></li>
 					</ul>
-				</article>
+			</article>
 		</>
 	)
 }

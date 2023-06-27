@@ -61,7 +61,7 @@ const ItemDetail = ({ id, img, name, description, stock, price }) =>{
                             quantityAdded > 0 ?(
                                 ShowQuantity()
                             ) :(
-                                <ItemCount initial={0}  stock={stock} onAdd={handleOnAdd}/>
+                                <ItemCount initial={1}  stock={stock} onAdd={handleOnAdd}/>
                             )
                         }
                     </footer>

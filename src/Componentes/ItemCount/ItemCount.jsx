@@ -3,7 +3,7 @@ import "./EstilosItemCount.css"
 
 
 
-const ItemCount = ({ stock, initial=0, onAdd }) =>{
+const ItemCount = ({ stock, initial=1, onAdd }) =>{
 
     const {cantidad, sumar, restar} = useItemCout(initial, stock)
 
