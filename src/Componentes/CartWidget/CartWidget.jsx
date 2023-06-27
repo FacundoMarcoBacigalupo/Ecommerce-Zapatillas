@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { useCartContext } from "../../Context/CartContext";
 import "./estilosWidget.css"
 
@@ -9,10 +9,10 @@ const CartWidget = () => {
 
 
 	return (
-		<>
+		<Fragment>
 			<i className="bi bi-cart3"></i>
 			<span className="numeroCarrito">{totalProducts() || ""}</span>
-		</>
+		</Fragment>
 	);
 };
 
