@@ -12,7 +12,7 @@ import img6 from "../../assets/images/6.jpg"
 import img7 from "../../assets/images/7.jpg"
 import img8 from "../../assets/images/8.jpg"
 import img9 from "../../assets/images/9.jpg"
-import "./cart.css"
+import "./Cart.css"
 
 
 

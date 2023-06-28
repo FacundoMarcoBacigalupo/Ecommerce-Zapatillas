@@ -1,5 +1,5 @@
 import React from 'react'
-import "./historia.css"
+import "./Historia.css"
 
 
 
