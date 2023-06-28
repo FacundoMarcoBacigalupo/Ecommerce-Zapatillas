@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { useCartContext } from "../../Context/CartContext";
-import "./estilosWidget.css"
+import "./EstilosWidget.css"
 
 
 const CartWidget = () => {
