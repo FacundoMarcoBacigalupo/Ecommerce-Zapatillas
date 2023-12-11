@@ -49,17 +49,18 @@ const Cart = () => {
 				<Link to='/checkout' style={{marginBottom:"20px", color:"#05B222", width:"80%", textAlign:"center"}} className="efectoBoton">Emitir compra</Link> 
 			</div>
 
+
 			<article className="marquee">
 					<ul className="marquee__content">
-						<li className="marquee__item"><img src={img1} /></li>
-						<li className="marquee__item"><img src={img2} /></li>
-						<li className="marquee__item"><img src={img3} /></li>
-						<li className="marquee__item"><img src={img4} /></li>
-						<li className="marquee__item"><img src={img5} /></li>
-						<li className="marquee__item"><img src={img6} /></li>
-						<li className="marquee__item"><img src={img7} /></li>
-						<li className="marquee__item"><img src={img8} /></li>
-						<li className="marquee__item"><img src={img9} /></li>
+						<li className="marquee__item"><img src={img1} alt="img infinite"/></li>
+						<li className="marquee__item"><img src={img2} alt="img infinite"/></li>
+						<li className="marquee__item"><img src={img3} alt="img infinite" /></li>
+						<li className="marquee__item"><img src={img4} alt="img infinite" /></li>
+						<li className="marquee__item"><img src={img5} alt="img infinite" /></li>
+						<li className="marquee__item"><img src={img6} alt="img infinite" /></li>
+						<li className="marquee__item"><img src={img7} alt="img infinite" /></li>
+						<li className="marquee__item"><img src={img8} alt="img infinite" /></li>
+						<li className="marquee__item"><img src={img9} alt="img infinite" /></li>
 					</ul>
 			</article>
 		</>

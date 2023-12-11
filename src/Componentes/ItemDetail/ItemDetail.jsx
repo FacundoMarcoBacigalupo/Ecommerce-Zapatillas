@@ -18,7 +18,6 @@ const ItemDetail = ({ id, img, name, description, stock, price }) =>{
     const handleOnAdd = (quantity) =>{
         setQuantityAdded(quantity)
 
-
         const item ={
             id, name, price
         }

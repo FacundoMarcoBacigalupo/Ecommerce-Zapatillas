@@ -1,14 +1,14 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import ItemListContainer from '../Pages/ItemListContainer/ItemListContainer'
-import ItemDetallesContainer from '../Pages/ItemListContainer/ItemDetallesContainer/ItemDetallesContainer'
-import NavBar from '../Componentes/NavBar/NavBar'
+import ItemListContainer from '../Pages/ItemListContainer/ItemListContainer.jsx'
+import ItemDetallesContainer from '../Pages/ItemListContainer/ItemDetallesContainer/ItemDetallesContainer.jsx'
+import NavBar from '../Componentes/NavBar/NavBar.jsx'
 import Footer from '../Componentes/Footer/Footer'
-import Home from '../Pages/Home/Home'
-import Historia from '../Pages/Historia/Historia'
-import Error404 from '../Pages/Error404/Error404'
-import Cart from '../Pages/Cart/Cart'
-import Checkout from '../Componentes/Checkout/Checkout'
+import Home from '../Pages/Home/Home.jsx'
+import Historia from '../Pages/Historia/Historia.jsx'
+import Error404 from '../Pages/Error404/Error404.jsx'
+import Cart from '../Pages/Cart/Cart.jsx'
+import Checkout from '../Componentes/Checkout/Checkout.jsx'
 
 
 
@@ -18,7 +18,6 @@ const Rutas = () =>{
     return (
         <BrowserRouter>
                 <NavBar />
-
                     <Routes>
                         <Route exact path='/' element={<Home/>} />
 
@@ -31,9 +30,7 @@ const Rutas = () =>{
                         <Route exact path='/checkout' element={<Checkout/>} />
 
                         <Route path='*' element={<Error404/>} />
-
                     </Routes>
-
                 <Footer />
         </BrowserRouter>
     )

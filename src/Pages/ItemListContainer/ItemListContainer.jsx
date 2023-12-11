@@ -15,7 +15,7 @@ const ItemListContainer = () =>{
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
 
-    const {category} = useParams()
+    const { category } = useParams()
 
 
 
@@ -33,7 +33,6 @@ const ItemListContainer = () =>{
                     })
                 setProducts(productsAdapted)
                 })
-
 
                 .catch(error => console.error(error))
 

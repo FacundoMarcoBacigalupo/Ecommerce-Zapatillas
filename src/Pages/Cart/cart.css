@@ -23,6 +23,8 @@
     flex-shrink: 0;
 }
 
+
+
 @keyframes scrolling {
     0% { transform: translateX(0)}
 

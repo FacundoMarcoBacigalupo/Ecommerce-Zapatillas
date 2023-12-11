@@ -7,8 +7,7 @@ import "./Error404.css"
 
 
 const Error404 = () => {
-
-    const navigate= useNavigate()
+    const navigate = useNavigate()
 
     return (
         <section className='pagina404'>

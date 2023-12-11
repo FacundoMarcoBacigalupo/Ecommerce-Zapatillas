@@ -13,7 +13,7 @@ const ItemDetallesContainer = () =>{
     const [products, setProducts] = useState(null)
     const [loading, setLoading] = useState(true)
 
-    const {itemId} = useParams()
+    const { itemId } = useParams()
 
 
 

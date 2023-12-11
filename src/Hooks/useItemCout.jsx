@@ -12,7 +12,7 @@ const useItemCout = (initial, stock) => {
     }
 
     const restar = () =>{
-        if (cantidad >= 1)
+        if (cantidad > 1)
         setCantidad(cantidad - 1);
     }
 
